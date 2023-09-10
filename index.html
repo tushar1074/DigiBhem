@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotel Booking Registration Form</title>
+<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+           
+    <nav>
+        <ul>
+            <li><a id="clickbtn">HOME</a> </li>
+            <li><a class="about" href="#" target="">ABOUT US</a> </li>
+            
+        </ul>
+    </nav>
+    <div class="button">Contact Us</div>
+</header>
+<div class="mainBody">
+  <br>
+  <h1>
+    Reserve Your Room  :-
+  </h1>
+<div class="container">
+  <h1>Hotel Booking Registration Form</h1>
+  <form id="booking-form">
+    <label for="customer-name">Customer Name:</label>
+    <input type="text" id="customer-name" required>
+    
+    <label for="check-in-date">Check-in Date:</label>
+    <input type="date" id="check-in-date" required>
+    
+    <label for="total-days">Total No of Days:</label>
+    <input type="number" id="total-days" required>
+    
+    <label for="total-persons">Total No of Persons:</label>
+    <input type="number" id="total-persons" required>
+  
+    <label for="room-type">Room Type:</label>
+    <select id="room-type">
+      <option value="Delux">Delux Room</option>
+      <option value="Suite">Suite Room</option>
+    </select>
+    
+    <label for="amenities">Amenities:</label>
+    <input type="checkbox" id="amenities-ac" value="AC"> AC (1000/- per day)
+    <input type="checkbox" id="amenities-locker" value="Locker"> Locker (300/- per day)
+    
+    <label for="advance-amount">Advance Amount:</label>
+    <input type="number" id="advance-amount" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+    <br><br>
+    
+    <button type="button" id="calculate-total">Calculate Total</button>
+    <button type="button" id="reset-form">Reset Form</button>
+    
+    <div id="total-cost" class="hidden">
+      <p>Total Room Cost: <span id="room-cost"></span></p>
+      <p>Total Amenities Cost: <span id="amenities-cost"></span></p>
+      <p>Additional Cost: <span id="additional-cost"></span></p>
+      <p>Per Day Cost for Extra Person:<span id="extra-person-cost"></span></p>
+      <p>Total Cost: <span id="calculated-total"></span></p>
+      <p>Balance: <span id="balance"></span></p>
+    </div>
+    <br><br>
+    
+    <button type="submit" id="submit-button">Submit</button>
+  </form>
+</div>
+<br><br><br><br><br><br>
+</div>
+
+<div class="socialmedia">
+  <div class="end">
+      <div> follow us on:</div>
+      <div class="social_links">
+          <div>
+              <a class="fb" href="https://www.facebook.com/profile.php?id=100014440417523" target="_blank">
+                  <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+          </div>
+          <div> <a class="insta" href="https://www.instagram.com/invites/contact/?i=fifrw1h5tmwr&utm_content=kiameeq" target="_blank" ><i
+                  class="fa fa-instagram " aria-hidden="true"></i></a>
+          </div>
+          <div> <a class="twitter" href="https://twitter.com/YashKum87632124?t=oufo4N8v3yjdG_pvc5ZzyA&s=08" target="_blank"><i
+                  class="fa fa-twitter-square " aria-hidden="true"></i></a>
+          </div>
+          <div> <a class="linkedin" href="https://www.linkedin.com/in/yash-saini-964341228" target="_blank"><i class="fa fa-linkedin-square " aria-hidden="true"></i></a>
+          </div>
+      </div>
+      <ul>
+          <li>ALL RIGHTS RESERVED - @2023</li>
+      </ul>
+  </div>      
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
